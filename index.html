@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>D'Crunchy | Lumpia Jebew & Lumpia Lumer</title>
+    <meta name="description" content="D'Crunchy menghadirkan Lumpia Jebew Ayam Suwir dan Lumpia Lumer. Renyah, lezat, dan cocok untuk berbagai momen.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ================= LOADING SCREEN ================= -->
+    <div class="loader" id="loader" aria-hidden="true">
+        <div class="loader-inner">
+            <div class="loader-logo-wrap">
+                <img class="loader-logo" src="images/logo-dcrunchy.jpg" alt="Logo D'Crunchy">
+            </div>
+            <p class="loader-sub">menyiapkan kerenyahan<span class="loader-dots"><span>.</span><span>.</span><span>.</span></span></p>
+        </div>
+    </div>
+
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="#home" class="logo">
+                <img src="images/logo-dcrunchy.jpg" alt="Logo D'Crunchy">
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#about">Tentang</a>
+                <a href="#products">Produk</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+
+            <a
+                class="nav-button ripple"
+                href="https://wa.me/6285717144315"
+                target="_blank"
+            >
+                Hubungi Kami
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- ================= MOBILE NAV OVERLAY ================= -->
+    <div class="mobile-nav" id="mobileNav">
+        <nav>
+            <a href="#home" data-index="01">Home</a>
+            <a href="#about" data-index="02">Tentang</a>
+            <a href="#products" data-index="03">Produk</a>
+            <a href="#contact" data-index="04">Kontak</a>
+        </nav>
+        <a href="https://wa.me/6285717144315" target="_blank" class="mobile-nav-cta ripple">Chat WhatsApp</a>
+    </div>
+
+
+    <!-- ================= HERO ================= -->
+    <main>
+
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+
+                <div class="hero-text" data-reveal>
+                    <p class="eyebrow">WELCOME TO D'CRUNCHY</p>
+
+                    <h1>
+                        Crunchy Outside.
+                        <span>Delicious Inside.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        D'Crunchy menghadirkan camilan lumpia dengan
+                        perpaduan tekstur renyah dan rasa yang menggugah selera.
+                        Temukan dua pilihan favorit kami untuk menemani
+                        waktu santai, berkumpul, atau sekadar ngemil.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#products" class="button button-dark ripple">Lihat Produk</a>
+
+                        <a
+                            href="https://wa.me/6285717144315"
+                            target="_blank"
+                            class="button button-outline ripple"
+                        >
+                            Chat WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-photo" data-reveal data-reveal-delay="1">
+                    <img
+                        src="images/lumpia-jebew.jpg"
+                        alt="Lumpia Jebew Ayam Suwir D'Crunchy"
+                    >
+                </div>
+
+            </div>
+
+            <svg class="crackle-divider" viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 20 L60 20 L80 4 L110 36 L140 8 L165 30 L190 20 L1200 20 L1200 40 L0 40 Z" fill="var(--dark)"/>
+            </svg>
+        </section>
+
+
+        <!-- ================= TENTANG ================= -->
+        <section id="about" class="about section-dark">
+            <div class="container about-grid">
+
+                <div data-reveal>
+                    <p class="eyebrow">TENTANG KAMI</p>
+                    <h2>
+                        Camilan sederhana,
+                        <span>rasa yang berkesan.</span>
+                    </h2>
+                </div>
+
+                <div class="about-copy" data-reveal data-reveal-delay="1">
+                    <p>
+                        D'Crunchy adalah usaha kuliner yang menghadirkan
+                        pilihan camilan berbahan dasar lumpia dengan
+                        karakter yang renyah, lezat, dan mudah dinikmati
+                        oleh berbagai kalangan.
+                    </p>
+
+                    <p>
+                        Kami memiliki dua produk utama:
+                        <strong>Lumpia Jebew Ayam Suwir</strong> dan
+                        <strong>Lumpia Lumer</strong>. Keduanya dibuat
+                        untuk memberikan pengalaman ngemil yang berbeda
+                        dalam satu brand.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= PRODUK ================= -->
+        <section id="products" class="products section">
+            <div class="container">
+
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">OUR PRODUCTS</p>
+                    <h2>Kenalan dengan produk D'Crunchy.</h2>
+                    <p>
+                        Pilih favoritmu. Dua produk, dua karakter rasa,
+                        satu pengalaman D'Crunchy.
+                    </p>
+                </div>
+
+
+                <div class="product-grid">
+
+                    <!-- PRODUK 01 -->
+                    <article class="product-card" data-reveal>
+
+                        <div class="product-photo">
+                            <img
+                                src="images/lumpia-jebew.jpg"
+                                alt="Lumpia Jebew Ayam Suwir"
+                            >
+                        </div>
+
+                        <div class="product-content">
+                            <p class="product-number">01 / FAVORITE</p>
+
+                            <h3>Lumpia Jebew Ayam Suwir</h3>
+
+                            <p>
+                                Lumpia renyah dengan isian ayam suwir
+                                berbumbu yang gurih dan menggugah selera.
+                                Cocok untuk kamu yang suka camilan dengan
+                                cita rasa yang kuat dan tekstur crispy.
+                            </p>
+
+                            <div class="price">
+                                <strong>Rp12.000</strong>
+                                <span>/ 4 pcs</span>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUK 02 -->
+                    <article class="product-card" data-reveal data-reveal-delay="1">
+
+                        <div class="product-photo">
+                            <img
+                                src="images/lumpia-lumer.jpg"
+                                alt="Lumpia Lumer D'Crunchy"
+                            >
+                        </div>
+
+                        <div class="product-content">
+                            <p class="product-number">02 / SPECIAL</p>
+
+                            <h3>Lumpia Lumer</h3>
+
+                            <p>
+                                Pilihan lumpia dengan sensasi lumer yang
+                                memberikan pengalaman ngemil yang unik.
+                                Cocok untuk pencinta camilan manis dan
+                                gurih dengan tampilan yang menarik.
+                            </p>
+
+                            <div class="price">
+                                <strong>Rp6.000</strong>
+                                <span>/ porsi</span>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= KEUNGGULAN ================= -->
+        <section class="features">
+            <div class="container">
+
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">WHY D'CRUNCHY?</p>
+                    <h2>Kenapa pilih D'Crunchy?</h2>
+                </div>
+
+                <div class="feature-grid">
+
+                    <div class="feature-card" data-reveal>
+                        <span>01</span>
+                        <h3>Renyah</h3>
+                        <p>
+                            Tekstur crispy menjadi salah satu karakter
+                            utama yang membuat D'Crunchy mudah dikenali.
+                        </p>
+                    </div>
+
+                    <div class="feature-card" data-reveal data-reveal-delay="1">
+                        <span>02</span>
+                        <h3>Lezat</h3>
+                        <p>
+                            Setiap produk dibuat dengan perhatian pada
+                            perpaduan rasa dan tekstur.
+                        </p>
+                    </div>
+
+                    <div class="feature-card" data-reveal data-reveal-delay="2">
+                        <span>03</span>
+                        <h3>Praktis</h3>
+                        <p>
+                            Cocok untuk menemani waktu santai,
+                            belajar, berkumpul, dan berbagai momen lainnya.
+                        </p>
+                    </div>
+
+                    <div class="feature-card" data-reveal data-reveal-delay="3">
+                        <span>04</span>
+                        <h3>All Payment</h3>
+                        <p>
+                            Pembayaran dapat dilakukan menggunakan
+                            berbagai metode pembayaran yang tersedia.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= INFO PEMESANAN ================= -->
+        <section class="contact-cta">
+            <div class="container cta-box" data-reveal>
+
+                <div>
+                    <p class="eyebrow">INTERESTED?</p>
+                    <h2>Ingin tahu lebih banyak?</h2>
+                    <p>
+                        Hubungi D'Crunchy melalui WhatsApp untuk
+                        informasi produk dan ketersediaan terbaru.
+                    </p>
+                </div>
+
+                <a
+                    href="https://wa.me/6285717144315"
+                    target="_blank"
+                    class="button button-light ripple"
+                >
+                    0857 1714 4315
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- ================= KONTAK ================= -->
+        <section id="contact" class="contact section">
+            <div class="container">
+
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">CONNECT WITH US</p>
+                    <h2>Temukan D'Crunchy.</h2>
+                    <p>
+                        Ikuti media sosial kami untuk mendapatkan
+                        informasi dan update terbaru.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <!-- GANTI LINK INSTAGRAM DI BAWAH -->
+                   <a href="https://www.instagram.com/d.cruncy.bite/" target="_blank" rel="noopener noreferrer" class="contact-card" data-reveal>
+    <span>INSTAGRAM</span>
+    <strong>@d.cruncy.bite</strong>
+    <small>Ikuti Instagram D'Crunchy</small>
+</a>
+
+                    <!-- GANTI LINK TIKTOK DI BAWAH -->
+                    <a href="#" class="contact-card" target="_blank" data-reveal data-reveal-delay="1">
+                        <span>TIKTOK</span>
+                        <strong>@dcrunchy</strong>
+                        <small>Ikuti TikTok kamu</small>
+                    </a>
+
+                    <a
+                        href="https://wa.me/6285717144315"
+                        class="contact-card"
+                        target="_blank"
+                        data-reveal data-reveal-delay="2"
+                    >
+                        <span>WHATSAPP</span>
+                        <strong>0857 1714 4315</strong>
+                        <small>Chat untuk informasi produk</small>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <img src="images/logo-dcrunchy.jpg" alt="Logo D'Crunchy">
+                <p>Crunchy Outside, Delicious Inside.</p>
+            </div>
+
+            <p>© <span id="year"></span> D'Crunchy. All Rights Reserved.</p>
+
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
